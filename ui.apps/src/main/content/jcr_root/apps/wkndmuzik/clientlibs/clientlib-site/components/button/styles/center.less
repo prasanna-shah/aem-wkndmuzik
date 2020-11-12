@@ -1,0 +1,36 @@
+.cmp-button--center {
+    text-align: center;
+    padding: 120px 0;
+    .cmp-button {
+        letter-spacing: 3px;
+        border-radius: 8px;
+        background-color: #3C55F0;
+        padding: 23px 100px;
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 19px;
+        font-weight: bold;
+    }
+}
+
+// Styles for Tablet
+@media (min-width: @screen-medium) and (max-width: @screen-tablet) {
+    .cmp-button--center {
+        padding: 100px 0;
+        .cmp-button {
+            padding: 20px 89px;
+  			font-size: 16px;
+        }
+    }
+}
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+    .cmp-button--center {
+        padding: 60px 0;
+        .cmp-button {
+            padding: 15px 20px;
+  			font-size: 14px;
+        }
+    }
+}

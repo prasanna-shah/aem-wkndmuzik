@@ -1,0 +1,26 @@
+.cmp-teaser--card {
+    .cmp-teaser__title {
+        letter-spacing: 1px;
+        text-transform: none;
+        font-size: 25px;
+    }
+    .cmp-teaser__title:after {
+        display: none;
+    }
+    
+    .cmp-teaser__showsdate {
+        font-size: 16px;
+    }
+    
+    .cmp-teaser__description {
+        padding: 0 20px 0 0;
+    }	
+}
+
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+	.cmp-teaser--card {
+        width: 100% !important;
+    }
+}

@@ -1,0 +1,30 @@
+.cmp-form-text__error {
+	position: relative;
+	&:after {
+		background-image: url('/content/dam/wkndmuzik/icons/Icon-Warning.png');
+		content: "";
+		height: 16px;
+		right: 45%;
+		position: absolute;
+		top: 12px;
+		width: 16px;
+	}
+}
+
+// Styles for Tablet
+@media (min-width: @screen-medium) and (max-width: @screen-tablet) {
+.cmp-form-text__error {
+    &:after {
+            right: 24%;
+        }
+    }
+  }
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+.cmp-form-text__error {
+    &:after {
+            right: 26%;
+        }
+    }
+}

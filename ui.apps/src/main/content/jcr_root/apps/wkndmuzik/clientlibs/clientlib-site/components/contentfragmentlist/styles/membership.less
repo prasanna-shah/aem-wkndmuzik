@@ -1,0 +1,104 @@
+.cmp-contentfragmentlist--membership {
+    padding: 0;
+    margin: 60px 5px 90px;
+    .cmp-contentfragment__item {
+        margin: 0 10px;
+        width: 31%;
+        float: left;
+        border: 1.5px solid #3C55F0;
+        border-radius: 18px;
+        text-align: center;
+        position: relative;
+        padding-top: 60px;
+    }
+    .cmp-contentfragment__title, .cmp-contentfragment__element-title {
+        display: none;
+    }
+    .cmp-contentfragment__item-flagged {
+        .cmp-contentfragment__element--membershipFlag {
+            .cmp-contentfragment__element-value {
+                left: 48%;
+                color: transparent;
+                position: absolute;
+                height: 14px;
+                background-image: url('/content/dam/wkndmuzik/icons/Shape.png');
+                width: 12px;
+                top: 30px;
+                margin: 0;
+                &:before {
+                  top: -5px;
+                  left: -11px;
+                  position: absolute;
+                  height: 24px;
+                  border-radius: 12px;
+                  border: 1px solid #3C55F0;
+                  background-color: #3C55F0;
+                  width: 31px;
+                  content: "";
+                  z-index: -1;
+                }
+            }
+        }
+	}
+    .cmp-contentfragment__element--membershipName {
+        .cmp-contentfragment__element-value {
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0 0 10px;
+        }
+    }
+    .cmp-contentfragment__element--membershipCharges {
+        .cmp-contentfragment__element-value {
+            font-size: 25px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin: 0
+        }
+    }
+    .cmp-contentfragment__element--description {
+        .cmp-contentfragment__element-value {
+            font-size: 16px;
+            margin: 30px 40px 50px;
+        }
+    }
+}
+
+// Styles for Tablet
+@media (min-width: @screen-medium) and (max-width: @screen-tablet) {
+    .cmp-contentfragmentlist--membership {
+        margin: 40px 0 60px;
+        padding-left: 5px;
+        .cmp-contentfragment__item {
+          width: 30%;
+        }
+        .cmp-contentfragment__element--description {
+            .cmp-contentfragment__element-value {
+              font-size: 16px;
+              margin: 30px 35px 50px;
+            }
+        }
+    }
+}
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+    .cmp-contentfragmentlist--membership {
+        margin: 30px 0 30px;
+        .cmp-contentfragment__item {
+          width: 93%;
+          margin: 10px 10px;
+        }
+        .cmp-contentfragment__element--description {
+            .cmp-contentfragment__element-value {
+              font-size: 14px;
+            }
+        }
+        .cmp-contentfragment__element--membershipCharges {
+            .cmp-contentfragment__element-value {
+              font-size: 18px;
+            }
+        }
+    }
+}

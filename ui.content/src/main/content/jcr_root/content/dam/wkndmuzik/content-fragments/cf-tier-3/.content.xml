@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="b5c67607-8c3f-4f2c-8060-909fc3477194">
+    <jcr:content
+        cq:name="cf-tier-3"
+        cq:parentPath="/content/dam/wkndmuzik/content-fragments"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-09-23T09:20:13.979Z"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="CF Tier 3"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-09-23T09:20:13.979Z">
+        <data
+            cq:model="/conf/wkndmuzik/settings/dam/cfm/models/monthly-membership-model"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                buttonLabel="SIGN UP"
+                buttonLabel_x0040_LastModified="{Date}2020-09-23T09:20:13.701Z"
+                description="&lt;p>Access to unlimited shows per year on all digital devices&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-09-23T09:20:13.701Z"
+                flag="{Boolean}false"
+                flag_x0040_LastModified="{Date}2020-09-23T09:20:13.703Z"
+                membershipCharges="$15/month"
+                membershipCharges_x0040_LastModified="{Date}2020-09-23T09:20:13.700Z"
+                membershipName="Tier 3"
+                membershipName_x0040_LastModified="{Date}2020-09-23T09:20:13.700Z"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

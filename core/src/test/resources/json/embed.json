@@ -1,0 +1,32 @@
+{
+	"jcr:primaryType": "cq:Page",
+	"jcr:createdBy": "admin",
+	"jcr:created": "Wed Sep 09 2020 11:30:35 GMT+0000",
+	"jcr:content": {
+		"jcr:primaryType": "cq:PageContent",
+		"jcr:createdBy": "admin",
+		"jcr:title": "en",
+		"cq:template": "/conf/wkndmuzik/settings/wcm/templates/page-content",
+		"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+		"jcr:created": "Wed Sep 09 2020 11:30:35 GMT+0000",
+		"cq:lastModified": "Tue Sep 08 2020 16:41:13 GMT+0530",
+		"pageTitle": "WKND MUZIK",
+		"sling:resourceType": "wkndmuzik/components/page",
+		"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+		"cq:lastModifiedBy": "admin",
+		"embed": {
+		    "jcr:primaryType": "nt:unstructured",
+		    "jcr:createdBy": "admin",
+		    "youtubeHeight": "577",
+		    "jcr:lastModifiedBy": "admin",
+		    "embeddableResourceType": "core/wcm/components/embed/v1/embed/embeddable/youtube",
+		    "jcr:created": "Thu Oct 01 2020 05:16:37 GMT+0000",
+		    "type": "embeddable",
+		    "youtubeVideoId": "c2odnv29TlU",
+		    "jcr:lastModified": "Tue Oct 06 2020 08:11:51 GMT+0000",
+		    "sling:resourceType": "wkndmuzik/components/embed",
+		    "thumbnail": "/content/dam/wkndmuzik/media/AdobeStock_-20.png",
+		    "youtubeWidth": "1088"
+		}
+	}
+}

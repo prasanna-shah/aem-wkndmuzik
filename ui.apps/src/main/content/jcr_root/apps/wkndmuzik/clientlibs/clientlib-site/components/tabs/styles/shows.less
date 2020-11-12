@@ -1,0 +1,69 @@
+.cmp-tabs--shows {
+	padding: 20px 14px 80px;
+	.cmp-tabs__tabpanel {
+		margin: 0 -14px;
+		&:focus {
+			outline: none;
+		}
+	}
+
+	.cmp-tabs__tablist {
+		padding: 30px 0;
+		.cmp-tabs__tab {
+			text-transform: uppercase;
+			font-size: 14px;
+			letter-spacing: 2px;
+			margin-right: 60px;
+			&:focus {
+				outline: none;
+			}
+		}
+		.cmp-tabs__tab--active {
+			border: none;
+			font-weight: bold;
+			border-radius: 8px;
+			background-color: #3C55F0;
+			padding: 10px 20px 11px;
+			margin-top: -3px;
+		}
+	}
+}
+
+// Styles for Tablet
+@media (min-width: @screen-medium) and (max-width: @screen-tablet) {
+    .cmp-tabs--shows {
+        padding: 20px 14px 50px;
+        .cmp-tabs__tablist {
+          padding-top: 0;
+        }
+    }
+}
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+    .cmp-tabs--shows {
+        padding-bottom: 0px;
+        .cmp-tabs__tablist {
+            padding: 0 0 20px;
+            .cmp-tabs__tab {
+                font-size: 12px;
+                padding: 8px 15px 8px;
+            }
+            .cmp-tabs__tab--active {
+                margin-right: 20px;
+            }
+        }
+        .cmp-tabs__tabpanel {
+            .cmp-teaser--card {
+                width: 100% !important;
+                margin-bottom: 30px;
+                .cmp-teaser__title {
+                    font-size: 18px;
+                }
+                .cmp-teaser__showsdate, .cmp-teaser__description {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}

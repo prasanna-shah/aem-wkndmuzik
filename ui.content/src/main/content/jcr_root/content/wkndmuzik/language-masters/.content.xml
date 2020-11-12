@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-09-11T05:49:53.842Z"
+        cq:lastModifiedBy="admin"
+        cq:redirectTarget="/content/wkndmuzik/us/en"
+        cq:template="/conf/wkndmuzik/settings/wcm/templates/content-page-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Language Masters"
+        sling:resourceType="foundation/components/redirect"
+        hideInNav="true"
+        pageTitle="Language Masters">
+        <image
+            jcr:primaryType="nt:unstructured"
+            fileReference="/content/dam/wkndmuzik/media/AdobeStock_-20.png"/>
+    </jcr:content>
+    <en/>
+    <fr/>
+    <de/>
+    <es/>
+</jcr:root>

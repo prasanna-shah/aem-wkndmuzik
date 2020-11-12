@@ -1,0 +1,33 @@
+.cmp-title {
+    h1, .h1 { font-size: 60px; }
+	h2, .h2 { font-size: 41px; }
+
+    .cmp-title__text {
+        font-style: normal;
+        font-weight: bold;
+        color: rgba(255,255,255,1);
+        text-transform: uppercase;
+    }  
+}
+
+// Styles for Tablet
+@media (min-width: @screen-medium) and (max-width: @screen-tablet) {
+    .cmp-title {
+        h1, .h1 { font-size: 41px; }
+        h2, .h2 { font-size: 30px; }
+    }
+}
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+	.cmp-title {
+        h1, .h1 { font-size: 24px; }
+        h2, .h2 { font-size: 18px; }
+    }
+    #sign-up-form {
+        .cmp-title {
+            margin-bottom: -20px;
+            margin-top: 80px;
+        }
+    }
+}

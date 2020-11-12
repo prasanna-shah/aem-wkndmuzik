@@ -1,0 +1,55 @@
+.cmp-button--contact {
+    padding: 15px 0 0;
+    width: auto !important;
+    #contact {
+        border-radius: 10px;
+        padding: 8px 20px 10px;
+        border: 2px solid #cccccc;
+        .cmp-button__text {
+            letter-spacing: 3px;
+            font-weight: bold;
+            font-family: Montserrat;
+            color: #fff;
+            font-size: 12px;
+        }
+        .cmp-button__icon--contact {
+            display: inline-block;
+            background-image: url("/content/dam/wkndmuzik/icons/Icon-material-email.png");
+            width: 14px;
+            height: 11px;
+            margin-right: 5px;
+        }
+    }
+}
+
+// Styles for Tablet
+@media (min-width: @screen-medium) and (max-width: @screen-tablet) {
+    .cmp-button--contact {
+    	#contact {
+            padding: 5px 7px 6px 12px;
+            .cmp-button__text {
+              display: none;
+            }
+        }
+    }
+}
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+	.cmp-button--contact {
+        #contact {
+          	padding: 4px 20px 8px;
+            .cmp-button__text {
+                font-size: 11px;
+            }
+        }
+        &.cmp-button--shorten {
+            #contact {
+                padding: 4px 10px 8px 15px;
+                .cmp-button__text {
+                  display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.cmp-teaser__content--left {
+    padding: 0;
+	.cmp-teaser {
+		position: relative;
+		.cmp-teaser__content {
+			left: 130px;
+			top: 125px;
+			position: absolute;
+		}
+	}
+}
+
+// Styles for Tablet
+@media (min-width: @screen-medium) and (max-width: @screen-tablet) {
+    .cmp-teaser__content--left {
+        .cmp-teaser {
+            .cmp-teaser__content {
+                left: 60px;
+                top: 0px;
+            }
+        }
+    }
+}
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+    .cmp-teaser__content--left {
+        .cmp-teaser {
+            .cmp-teaser__content {
+                left: 20px;
+                top: 0;
+                position: relative;
+                margin-right: 20px;
+    			margin-bottom: 60px;
+            }
+        }
+    }
+}

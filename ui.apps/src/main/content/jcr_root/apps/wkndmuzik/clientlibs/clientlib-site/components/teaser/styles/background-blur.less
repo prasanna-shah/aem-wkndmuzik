@@ -1,0 +1,50 @@
+.cmp-teaser__content--blur {
+    position: relative;
+    margin-top: 70px;
+	.cmp-teaser__background--blur {
+		height: 180px;
+		background-size: 338px;
+		background-repeat: no-repeat;
+		background-position: 0px -200px;
+		filter: blur(40px) brightness(0.7) contrast(1.1);
+		opacity: 0.9;
+		backdrop-filter: blur(20px);
+	}
+	&.cmp-teaser--card {
+		.cmp-teaser__content {
+			padding: 0 20px;
+			position: absolute;
+			top: 240px;
+			.cmp-teaser__title {
+				margin: 15px 0 20px 0;
+				font-size: 21px;
+			}
+            @media (min-width: @screen-xs-large) {
+                padding: 0 55px 0 30px;
+                top: 270px;
+            }
+		}
+	}
+}
+
+// Styles for Tablet
+@media (min-width: @screen-medium) and (max-width: @screen-tablet) {
+    .cmp-teaser__content--blur {
+        margin-top: 50px;
+        &.cmp-teaser--card {
+			.cmp-teaser__content {
+				top: 150px;
+            }
+		}
+	}
+}
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+	.cmp-teaser__content--blur {
+        margin-top: 20px;
+    	.cmp-teaser__background--blur {
+            height: 150px;
+        }
+    }
+}

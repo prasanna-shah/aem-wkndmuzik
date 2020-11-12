@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="fb60f6e0-afe7-4f0c-aaee-664a9a44becc">
+    <jcr:content
+        cq:name="cf-tier-2"
+        cq:parentPath="/content/dam/wkndmuzik/content-fragments"
+        jcr:description=""
+        jcr:lastModified="{Date}2020-09-23T10:08:03.780Z"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="CF Tier 2"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-09-23T10:08:03.780Z">
+        <data
+            cq:model="/conf/wkndmuzik/settings/dam/cfm/models/monthly-membership-model"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                buttonLabel="SIGN UP"
+                buttonLabel_x0040_LastModified="{Date}2020-09-23T09:19:03.556Z"
+                description="&lt;p>Access to 50 shows per year on all digital devices&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-09-23T10:08:03.528Z"
+                flag="{Boolean}true"
+                flag_x0040_LastModified="{Date}2020-09-23T09:19:03.556Z"
+                membershipCharges="$12/month"
+                membershipCharges_x0040_LastModified="{Date}2020-09-23T10:08:03.527Z"
+                membershipFlag="true"
+                membershipFlag_x0040_LastModified="{Date}2020-09-23T10:08:03.527Z"
+                membershipName="Tier 2"
+                membershipName_x0040_LastModified="{Date}2020-09-23T10:08:03.527Z"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,107 @@
+.cmp-languagenavigation--header {
+    width: auto !important;
+    padding-right: 28px;
+
+    .cmp-languagenavigation__icon--toggle {
+        display: inline-block;
+        background-image: url("/content/dam/wkndmuzik/icons/Web.png");
+        width: 14px;
+        height: 14px;
+        margin-top: 22px;
+    } 
+
+    .cmp-languagenavigation {
+        border-radius: 10px;
+        background: #4f4950;
+        right: 10px;
+        z-index: 999;
+        width: 230px;
+        position: fixed;
+        top: 69px;
+        display: none;
+        &:before {
+            background: #4f4950;
+            border-color: #4f4950;
+            border-style: solid;
+            border-width: .1em .1em 0 0;
+            content: "";
+            height: 10px;
+            right: 19px;
+            position: absolute;
+            top: -6px;
+            transform: rotate(-45deg);
+            width: 12px;
+        }
+        .cmp-languagenavigation__group {
+            font-size: 11px;
+            list-style: none;
+            margin: 0;
+            padding: 0px;
+            .cmp-languagenavigation__item--level-0 {
+                padding: 10px 40px;
+                border-bottom: 1px solid #a09e9e;
+                position: relative;
+                &:last-child {
+                    border-bottom: none;
+                }
+                .cmp-languagenavigation__item-title {
+                    display: block;
+                    padding-bottom: 5px;
+                    letter-spacing: 0.8px;
+                }
+                .cmp-languagenavigation__item--level-1 {
+                    display: inline;
+                    .cmp-languagenavigation__item-link {
+                        color: #fff;
+                        border-right: 1px solid;
+                        padding-right: 5px;
+                        margin-right: 5px;
+                        text-transform: uppercase;
+                    }
+                    &:last-child {
+                        .cmp-languagenavigation__item-link {
+                            border-right: none;
+                        }
+                    }
+                }
+            }
+    
+            .cmp-languagenavigation__item--active{
+                &:before {
+                    left: 15px;
+                    border-color: #fff;
+                    border-style: solid;
+                    border-width: 2px 2px 0 0;
+                    content: "";
+                    height: 5px;
+                    position: absolute;
+                    top: 22px;
+                    transform: rotate(135deg);
+                    width: 10px;
+                }
+                .cmp-languagenavigation__item-title {
+                    font-weight: bolder;
+                }
+            }
+        }
+    }
+}
+
+// Styles for Tablet
+@media (min-width: @screen-medium) and (max-width: @screen-tablet) {
+	.cmp-languagenavigation--header {
+      padding-right: 20px;
+    }
+}
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+    .cmp-languagenavigation--header {
+        position: relative;
+        .cmp-languagenavigation {
+          right: 18%;
+          position: absolute;
+          top: 50px;
+        }
+    }
+}

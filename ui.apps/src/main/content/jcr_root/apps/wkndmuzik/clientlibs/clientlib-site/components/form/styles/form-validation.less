@@ -1,0 +1,33 @@
+.cmp-form-text__validation--error {
+	display: block;
+	top: -20px;
+	position: relative;
+	background: #0e0f13;
+	width: 53%;
+	border: none;
+	border-color: #0e0f13;
+	color: #fb2657;
+    opacity:1;
+	font-size: 12px;
+	font-weight: normal;
+	padding-left: 30px;
+	&:focus {
+		border: 2px solid #0e0f13;
+		outline: none;
+	}
+}
+
+// Styles for Tablet
+@media (min-width: @screen-medium) and (max-width: @screen-tablet) {
+.cmp-form-text__validation--error {
+        width: 66%;
+  }
+}
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+ .cmp-form-text__validation--error {
+       width: 84%;
+       padding-left: 19px;
+  }
+}

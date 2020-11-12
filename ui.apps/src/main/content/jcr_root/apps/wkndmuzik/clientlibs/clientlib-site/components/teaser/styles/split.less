@@ -1,0 +1,133 @@
+.cmp-teaser--split {
+	&.cmp-teaser__content--right {
+        padding: 90px 0 70px;
+		.cmp-teaser .cmp-teaser__content {
+		    top: 150px;
+            .cmp-teaser__description {
+                line-height: 35px;
+                padding-right: 130px;
+            }
+		}
+		.cmp-teaser__image {
+			width: 47%;
+            .cmp-image__image {
+                margin-left: -6px;
+            }
+		}
+	}
+	&.cmp-teaser__content--left {
+        padding: 0 14px 80px;
+		.cmp-teaser {
+            flex-direction: row-reverse;
+  			display: flex;
+			.cmp-teaser__content {
+				left: 0;
+				top: 0;
+				position: relative;
+				width: 50%;
+                padding-top: 100px;
+				.cmp-teaser__title{
+					padding-left: 50px;
+                    padding-right: 125px;
+                    &:after {
+                      display: none;
+                    }
+                }
+				.cmp-teaser__pretitle {
+					font-size: 16px;
+                    padding-left: 50px;
+				}
+				.cmp-teaser__description {
+					padding: 22px 100px 0 50px;
+                    line-height: 35px;
+				}
+			}
+			.cmp-teaser__image {
+				margin: 0;
+				width: 50%;
+				float: right;
+			}
+		}
+	}
+}
+
+// Styles for Tablet
+@media (min-width: @screen-medium) and (max-width: @screen-tablet) {
+    .cmp-teaser--split {
+        &.cmp-teaser__content--left {
+            padding: 0 14px 50px;
+            .cmp-teaser .cmp-teaser__content {
+              padding-top: 60px;
+                .cmp-teaser__title {
+                    font-size: 30px;
+                    padding-right: 50px;
+                }
+                .cmp-teaser__description {
+                  padding: 10px 20px 0 50px;
+                  line-height: 30px;
+                }
+            }
+        }
+        &.cmp-teaser__content--right {
+            padding: 80px 0 50px;
+            .cmp-teaser .cmp-teaser__content {
+                top: 100px;
+                left: 48%;
+                .cmp-teaser__description {
+                	line-height: 25px;
+                	padding-right: 20px;
+            	}
+            }
+        }
+    }
+}
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+    .cmp-teaser--split {
+        &.cmp-teaser__content--left {
+            padding: 0 14px 40px;
+            .cmp-teaser {
+                display: block;
+                .cmp-teaser__image {
+                  width: 100%;
+                  float: none;
+                }
+                .cmp-teaser__content {
+                    padding-top: 25px;
+  				    padding-bottom: 10px;
+                    width: 100%;
+                    .cmp-teaser__title {
+                        padding-left: 20px;
+  					    font-size: 18px;
+                    }
+                    .cmp-teaser__description {
+                      padding: 10px 20px 0;
+  					  font-size: 14px;
+                    }
+                    .cmp-teaser__pretitle {
+                      font-size: 14px;
+                      padding-left: 20px;
+                    }
+                }
+            }
+        }
+        &.cmp-teaser__content--right {
+            padding: 70px 0 0;
+  			overflow: hidden;
+            .cmp-teaser .cmp-teaser__content {
+                top: 0;
+                .cmp-teaser__description {
+                	line-height: 25px;
+                	padding-right: 0;
+            	}
+            }
+            .cmp-teaser__image {
+                width: 100%;
+                .cmp-image__image {
+                  margin-left: 5px;
+                }
+            }
+        }
+    }
+}

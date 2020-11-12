@@ -1,0 +1,55 @@
+.cmp-embed {
+    padding-top: 60px;
+    padding-bottom: 130px;
+    display: block;
+    margin: auto;
+    .cmp-embed_thumbnail {
+        position: absolute;
+        display:block;
+    }
+    .cmp-embed_thumbnail-icon {
+        top: 30%;
+        left: 42%;
+        position: absolute;
+        height: 157px;
+        border-radius: 12px;
+        background-image: url('/content/dam/wkndmuzik/icons/Play.png');
+        width: 157px;
+        content: "";
+    }
+}
+
+// Styles for Tablet
+@media (min-width: @screen-medium) and (max-width: @screen-tablet) {
+    .cmp-embed {
+        padding-bottom: 0;
+        .cmp-embed_thumbnail {
+            margin-right: 14px;
+        }
+		img, iframe {
+			width: 100%;
+            height: 392px;
+        }
+    }
+}
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+    .cmp-embed {
+        padding-top: 20px;
+    	padding-bottom: 50px;
+        .cmp-embed_thumbnail {
+            margin-right: 14px;
+            .cmp-embed_thumbnail-icon {
+              left: 38%;
+              height: 75px;
+              width: 75px;
+              background-repeat: round;
+            }
+        }
+		img, iframe {
+			width: 100%;
+            height: 184px;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.options--custom-drop-down {
+	position: relative;
+    width: 63.3% !important;
+	.cmp-form-options {
+		padding-bottom: 0;
+	}
+	.cmp-form-options__select-selected {
+		margin: 0 24px 33px 19px;
+		background-color: transparent;
+		font-size: 14px;
+		border-radius: 5px;
+		color: #ffffff;
+		padding: 10px 16px;
+		border: 1px solid #fff;
+		cursor: pointer;
+		user-select: none;
+		font-weight: bold;
+		position: relative;
+		&:after {
+			transform: rotate(135deg);
+			border-color: #3c55f0;
+			border-style: solid;
+			border-width: 3px 3px 0 0;
+			position: absolute;
+			content:
+			"";
+			top: 13px;
+			right: 15px;
+			width: 8px;
+			height: 8px;
+		}
+		&.cmp-form-options--select-arrow {
+			border-bottom-left-radius: 0;
+			border-bottom-right-radius: 0;
+			border-bottom: none;
+		}
+		&.cmp-form-options--select-arrow:after {
+			transform: rotate(-45deg);
+			top: 15px;
+		}
+	}
+
+	.cmp-form-options__select-items {
+		margin: -33px 24px 25px 19px;
+		border-radius: 5px;
+		left: 15px;
+		border: 1px solid #fff;
+		border-top: none;
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		.cmp-form-options__select-items-values, div {
+			margin: 0;
+			border: transparent;
+			background-color: transparent;
+			font-size: 14px;
+			color: #ffffff;
+			padding: 10px 16px;
+			cursor: pointer;
+			user-select: none;
+			font-weight: bold;
+			position: relative;
+			&:hover {
+				border-radius: 0 !important;
+				color: #000 !important;
+				background-color: #fff !important;
+			}
+		}
+		.cmp-form-options__select-items-selected {
+			border-radius: 0 !important;
+			color: #000 !important;
+			background-color: #fff !important;
+		}
+	}
+
+	.cmp-form-options__select-items-hide, select {
+	  display: none;
+	}
+}
+
+// Styles for Tablet
+@media (min-width: @screen-medium) and (max-width: @screen-tablet) {
+.options--custom-drop-down {
+   .cmp-form-options__select-selected {
+       width: 111%;
+        }
+    .cmp-form-options__select-items{
+        margin: -33px -78px 25px 19px;
+        }
+    }
+  }
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+ .options--custom-drop-down {
+   .cmp-form-options__select-selected {
+       margin: 0 -57px 33px 20px;
+       padding: 12px 16px;
+        }
+        .cmp-form-options__select-items{
+       margin: -33px -57px 25px 20px;
+        }
+    }
+}

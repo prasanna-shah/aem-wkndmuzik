@@ -1,0 +1,54 @@
+.cmp-teaser--hero {
+    .cmp-teaser__pretitle {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        font-size: 41px;
+        font-weight: bold;
+        &:after {
+          display: block;
+          width: 128px;
+          padding-top: 15px;
+          content: "";
+          border-bottom: 6px solid #3c55f0;
+        }
+    }
+    &.cmp-teaser__pretitle--large {
+        .cmp-teaser__pretitle {
+            font-size: 60px;
+            width: 60%;
+        }
+    }
+}
+
+// Styles for Tablet
+@media (min-width: @screen-medium) and (max-width: @screen-tablet) {
+	.cmp-teaser--hero {
+        .cmp-teaser__pretitle {
+            font-size: 30px;
+        }
+        &.cmp-teaser__pretitle--large {
+            .cmp-teaser__pretitle {
+                width: 100% !important;
+  				font-size: 32px;
+            }
+        }
+    }
+}
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+	.cmp-teaser--hero {
+        &.cmp-teaser__pretitle--large {
+            .cmp-teaser__pretitle {
+                font-size: 20px;
+  				width: 100%;
+            }
+        }
+        .cmp-teaser__pretitle {
+          font-size: 20px;
+        }
+        .cmp-teaser__action-link {
+          padding: 12px 20px;
+        }
+    }
+}

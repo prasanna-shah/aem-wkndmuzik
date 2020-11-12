@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
+    jcr:primaryType="dam:Asset"
+    jcr:uuid="1f80f351-0459-4939-984b-498fa1582f4b">
+    <jcr:content
+        cq:name="monthly-membership-cf"
+        cq:parentPath="/content/dam/wkndmuzik/content-fragments"
+        cq:versionCreator="admin"
+        jcr:lastModified="{Date}2020-09-23T09:16:31.588Z"
+        jcr:lastModifiedBy="admin"
+        jcr:primaryType="dam:AssetContent"
+        jcr:title="CF Tier 1"
+        contentFragment="{Boolean}true"
+        lastFragmentSave="{Date}2020-09-23T09:16:31.589Z">
+        <data
+            cq:model="/conf/wkndmuzik/settings/dam/cfm/models/monthly-membership-model"
+            jcr:primaryType="nt:unstructured">
+            <master
+                jcr:mixinTypes="[cq:Taggable]"
+                jcr:primaryType="nt:unstructured"
+                buttonLabel="SIGN UP"
+                buttonLabel_x0040_LastModified="{Date}2020-09-23T09:16:31.322Z"
+                description="&lt;p>Access to 20 shows per year on all digital devices&lt;/p>&#xa;"
+                description_x0040_ContentType="text/html"
+                description_x0040_LastModified="{Date}2020-09-23T09:16:31.322Z"
+                membershipCharges="$10/month"
+                membershipCharges_x0040_LastModified="{Date}2020-09-23T09:16:31.321Z"
+                membershipName="Tier 1"
+                membershipName_x0040_LastModified="{Date}2020-09-23T09:16:31.321Z"/>
+        </data>
+        <metadata
+            jcr:mixinTypes="[cq:Taggable]"
+            jcr:primaryType="nt:unstructured"/>
+        <related jcr:primaryType="nt:unstructured"/>
+    </jcr:content>
+</jcr:root>

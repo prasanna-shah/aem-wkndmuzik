@@ -1,0 +1,24 @@
+.cmp-teaser__content--right {
+    padding: 0;
+	.cmp-teaser {
+		position: relative;
+		.cmp-teaser__content {
+			left: 50%;
+			top: 125px;
+			position: absolute;
+		}
+	}
+}
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+    .cmp-teaser__content--right {
+        .cmp-teaser {
+            .cmp-teaser__content {
+                left: 0;
+  				position: relative;
+  				padding: 0 20px;
+            }
+        }
+    }
+}

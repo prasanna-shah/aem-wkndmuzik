@@ -1,0 +1,56 @@
+{
+	"jcr:primaryType": "cq:Page",
+	"jcr:createdBy": "admin",
+	"jcr:created": "Wed Sep 09 2020 11:30:35 GMT+0000",
+	"jcr:content": {
+		"jcr:primaryType": "cq:PageContent",
+		"jcr:createdBy": "admin",
+		"jcr:title": "en",
+		"cq:template": "/conf/wkndmuzik/settings/wcm/templates/page-content",
+		"cq:contextHubSegmentsPath": "/etc/segmentation/contexthub",
+		"jcr:created": "Wed Sep 09 2020 11:30:35 GMT+0000",
+		"cq:lastModified": "Tue Sep 08 2020 16:41:13 GMT+0530",
+		"pageTitle": "WKND MUZIK",
+		"sling:resourceType": "wkndmuzik/components/page",
+		"cq:contextHubPath": "/etc/cloudsettings/default/contexthub",
+		"cq:lastModifiedBy": "admin",
+        "helloworld": {
+            "jcr:primaryType": "nt:unstructured",
+            "jcr:mixinTypes": ["cq:LiveSyncCancelled"],
+            "cq:isCancelledForChildren": true,
+            "sling:resourceType": "wcm/msm/components/ghost"
+            },
+
+		"teaser": {
+			"jcr:primaryType": "nt:unstructured",
+			"jcr:createdBy": "admin",
+			"jcr:title": "Bands",
+			"backgroundImg": "/content/dam/wkndmuzik/media/AdobeStock_-3.png",
+			"fileReference": "/content/dam/wkndmuzik/media/Photo -3.png",
+			"actionsEnabled": "false",
+			"jcr:lastModifiedBy": "admin",
+			"jcr:created": "Thu Sep 17 2020 11:55:27 GMT+0000",
+			"titleFromPage": "false",
+			"blurBackground": "true",
+			"showsDate": "10.08.20",
+			"jcr:description": "<p>See your favorite bands take stage. We stream 52,724 band shows per year.<br />\r\n\r\n</p>\r\n<p>\r\n</p>\r\n<p>\r\n</p>\r\n<p>\r\n</p>\r\n",
+			"jcr:lastModified": "Mon Sep 21 2020 13:36:33 GMT+0000",
+			"descriptionFromPage": "false",
+			"sling:resourceType": "wkndmuzik/components/teaser",
+			"textIsRich": "true",
+			"cq:styleIds": [
+				"1600686095909",
+				"1600686168899"
+			],
+			"cq:responsive": {
+				"jcr:primaryType": "nt:unstructured",
+				"default": {
+					"jcr:primaryType": "nt:unstructured",
+					"offset": "0",
+					"width": "4"
+				}
+			}
+
+		}
+	}
+}

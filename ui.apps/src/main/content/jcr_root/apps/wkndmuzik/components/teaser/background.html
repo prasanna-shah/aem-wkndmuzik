@@ -1,0 +1,4 @@
+<sly data-sly-template.background="${@ teaser}">
+	<div data-sly-test="${teaser.blurBackground == 'true'}" class="cmp-teaser__background--blur" 
+    	style="background-image: url(${teaser.backgroundImg @ context='styleString'});"></div>
+</sly>

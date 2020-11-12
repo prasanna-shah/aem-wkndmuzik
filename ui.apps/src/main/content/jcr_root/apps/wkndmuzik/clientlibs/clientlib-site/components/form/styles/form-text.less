@@ -1,0 +1,72 @@
+.cmp-form-text {
+	padding-left: 14px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14px;
+	letter-spacing: 2px;
+	padding-bottom: 8px;
+	label {
+		width: 100%;
+		display: block;
+		padding: 0 7px 15px;
+	}
+	input {
+		&:invalid {
+			&:focus {
+				border-color: #fb2657;
+                opacity: 1;
+			}
+		}
+	}
+	.cmp-form-text__text {
+		width: 56%;
+		box-sizing: border-box;
+		border: 1px solid #ffffff;
+		margin: -1px 5px 25px;
+		height: 45px;
+		border-radius: 6px;
+		background: #0e0f13;
+		color: #ffffff;
+		padding-left: 10px;
+		font-style: normal;
+		font-weight: bold;
+		&:focus {
+			border: 2px solid #4965ee;
+            opacity: 1;
+			outline: none;
+		}
+
+		&::placeholder {
+			color: #ffffff;
+			padding-left: 10px;
+		}
+	}
+    #contact-label {
+        display: none;
+    }
+    .cmp-form-text__validation{
+        border-color: #fb2657;
+        opacity: 1;
+    }
+}
+
+// Styles for Tablet
+@media (min-width: @screen-medium) and (max-width: @screen-tablet) {
+.cmp-form-text {
+    .cmp-form-text__text {
+       width: 80%;
+       padding-left: 0px;
+        }
+    }
+  }
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+    .cmp-form-text {
+    .cmp-form-text__text {
+       width: 77%;
+       padding-left: 0px;
+        }
+    }
+  
+}

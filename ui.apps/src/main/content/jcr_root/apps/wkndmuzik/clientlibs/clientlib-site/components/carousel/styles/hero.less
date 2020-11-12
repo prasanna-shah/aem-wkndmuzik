@@ -1,0 +1,102 @@
+.cmp-carousel--hero {
+    padding: 0;
+	.cmp-carousel__actions {
+		display: none;
+	}
+	.cmp-carousel__indicators {
+		position: absolute;
+		display: block;
+		top: 50%;
+        left: 15px;
+		.cmp-carousel__indicator {
+			width: 7px;
+			margin: 20px;
+			background-color: #707070;
+			height: 7px;
+			&:focus {
+			  outline: none;
+			}
+		}
+		.cmp-carousel__indicator--active {
+			width: 11px;
+			margin: 18px;
+			background-color: #fff;
+			height: 11px;
+		}
+	}
+	.cmp-teaser__content--left {
+		.cmp-teaser__content {
+			left: 140px;
+			top: 290px;
+		}
+		&.cmp-teaser__pretitle--large {
+			.cmp-teaser__content {
+				top: 225px;
+			}
+		}
+	}
+	.cmp-teaser__content--right {
+		.cmp-teaser__content {
+			top: 225px;
+            left: 55%;
+            .cmp-teaser__pretitle {
+                width: 70%;
+            }
+		}
+	}
+}
+
+// Styles for Tablet
+@media (min-width: @screen-medium) and (max-width: @screen-tablet) {
+    .cmp-carousel--hero {
+        .cmp-teaser__content--left {
+            .cmp-teaser__content {
+                top: 140px;
+            }
+            &.cmp-teaser__pretitle--large {
+                .cmp-teaser__content {
+                    top: 140px;
+                }
+            }
+        }
+        .cmp-teaser__content--right {
+            .cmp-teaser__content {
+                top: 140px;
+  				left: 45%;
+            }
+        }
+    }
+}
+
+// Styles for Mobile
+@media (min-width: @screen-small) and (max-width: @screen-mobile) {
+	.cmp-carousel--hero {
+        padding-top: 160px !important;
+        .cmp-teaser__content--left {
+            .cmp-teaser__content {
+                left: 20px;
+                top: 20px;
+                position: inherit;
+                margin-right: 20px;
+            }
+            &.cmp-teaser__pretitle--large {
+                .cmp-teaser__content {
+                    top: 20px;
+  					margin-right: 20px;
+                }
+            }
+        }
+        .cmp-teaser__content--right {
+            .cmp-teaser__content {
+                top: 20px;
+  				left: 0;
+                .cmp-teaser__pretitle {
+                  width: 100%;
+                }
+            }
+        }
+        .cmp-carousel__indicators {
+          top: 10%;
+        }
+    }
+}
